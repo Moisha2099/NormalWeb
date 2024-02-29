@@ -3,6 +3,8 @@ import './App.css';
 import './index.css';
 import logo192 from './logo192.webp';
 import drug1 from './drug1.webp';
+import CreateButton from './CreateButton';
+import drug2 from './drug2.webp';
 function App() {
   return (
     <>
@@ -17,7 +19,16 @@ function App() {
     </header>
     <main>
       <div>
-        <img src={drug1} />
+        <img src={drug1} className='w-96 h-auto'/>
+        <p>Лазолван рино</p>
+        <p>120 руб.</p>
+        <CreateButton/>
+      </div>
+      <div>
+        <img src={drug2} className='w-96 h-auto'/>
+        <p>Працитомол</p>
+        <p>300 руб.</p>
+        <CreateButton/>
       </div>
     </main>
     
