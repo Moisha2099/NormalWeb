@@ -1,24 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
-
+import './index.css';
+import logo192 from './logo192.webp';
+import drug1 from './drug1.webp';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <header>
+      <nav>
+          <img src={logo192}/>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <img src={drug1} />
+      </div>
+    </main>
+    
+    <footer>
+    <p>© Pharmacy Site</p>
+    </footer>
+    </>
   );
 }
 
